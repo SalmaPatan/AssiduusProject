@@ -22,8 +22,8 @@ const CustomCard = ({ title, cardType, getAccountWatchListData, accountWatchList
   useEffect(() => {
     getAccountWatchListData({});
     getCashFlowListData();
-
-  },)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   useEffect(() => {
     if (cashFlowListData) {

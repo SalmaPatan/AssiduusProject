@@ -1,0 +1,54 @@
+{
+    "columns":[
+        {
+            "name": "Account",
+            "id":"account"
+        },
+        {
+            "name": "This Month",
+            "id":"mtd"
+        },
+        {
+            "name": "YTD",
+            "id":"ytd"
+        }
+    ],
+    "data":[
+        {
+            "account":"Sales",
+            "mtd":1194.58,
+            "ytd":11418.29
+    
+    
+        },
+        {
+            "account":"Advertising",
+            "mtd":6879.02,
+            "ytd":9271.36
+    
+    
+        },
+        {
+            "account":"Inventory",
+            "mtd":4692.26,
+            "ytd":9768.09
+    
+    
+        },
+        {
+            "account":"Entertainment",
+            "mtd":0.00,
+            "ytd":0.00
+    
+    
+        },
+        {
+            "account":"Product",
+            "mtd":4652.10,
+            "ytd":2529.90
+    
+    
+        }
+    ]
+
+}

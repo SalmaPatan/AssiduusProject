@@ -12,7 +12,7 @@ import Accounts from './components/Pages/Accounts';
 import Contacts from './components/Pages/Contacts';
 import Reports from './components/Pages/Reports';
 
-function App({ setPathname }) {
+function App({ setPathname, pathname }) {
   const location = useLocation();
 
   useEffect(() => {
@@ -20,6 +20,8 @@ function App({ setPathname }) {
       setPathname(location.pathname)
 
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, [location.pathname])
 
   return (
@@ -40,8 +42,11 @@ function App({ setPathname }) {
   );
 }
 
+const mapStateToProps = (state) => ({
+  pathname: state.app.pathname
+})
 const mapDispatchToProps = {
   setPathname
 }
 
-export default connect(null, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App);

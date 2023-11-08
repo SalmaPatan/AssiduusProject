@@ -8,7 +8,7 @@ import UserProfile from '../../assets/images/user-profile.jpg';
 const Header = () => {
   return (
     <header class="flex justify-between items-center h-16">
-      <img src={AssidusLogo} class="h-28 w-42" />
+      <img src={AssidusLogo} class="h-28 w-42" alt="logo" />
       <div class="flex justify-between items-center">
         <div class="flex items-center bg-gray-100 m-5 h-9 rounded-md p-2">
           <SearchIcon class="h-5 w-5" />
@@ -22,7 +22,7 @@ const Header = () => {
           <NotificationsIcon />
         </div>
         <div>
-          <img src={UserProfile} class="h-14 w-14 rounded-full m-5" />
+          <img src={UserProfile} class="h-14 w-14 rounded-full m-5" alt="profile" />
         </div>
 
       </div>

@@ -11,7 +11,6 @@ import { connect } from 'react-redux';
 import CustomMuiTable from './CustomMUiTable';
 import CustomDialog from './CustomDailog';
 import { Select, MenuItem, FormControl } from '@mui/material';
-import { styled } from '@mui/system';
 
 const CustomCard = ({ title, cardType, getAccountWatchListData, accountWatchListData, getCashFlowListData, cashFlowListData }) => {
   const [dialogDetails, setDailogDetails] = useState({ open: false, content: '', title: '', primaryButtonText: '', secondaryButtonText: '' });
@@ -24,7 +23,7 @@ const CustomCard = ({ title, cardType, getAccountWatchListData, accountWatchList
     getAccountWatchListData({});
     getCashFlowListData();
 
-  }, [])
+  },)
 
   useEffect(() => {
     if (cashFlowListData) {
@@ -36,7 +35,7 @@ const CustomCard = ({ title, cardType, getAccountWatchListData, accountWatchList
 
     }
 
-  }, [selectedMonth])
+  }, [selectedMonth, cashFlowListData])
 
   const FileUploadContent = () => {
     return (
